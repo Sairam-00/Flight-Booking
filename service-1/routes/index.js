@@ -4,14 +4,14 @@ var bodyParser = require('body-parser');
 var urlencodedParser = bodyParser.urlencoded({ extended: false });
 const request = require('request');
 const { json } = require('express');
-const APIURL = 'http://localhost:3001/availablerides';
+const APIURL = 'http://localhost:3001/AvailableFlights';
 var c=0;
 /* GET home page. */
 router.get('/', function(req, res, next) {
     res.sendFile(__dirname + "/" + "index.html");
 });
 
-router.get('/availablerides',function(req,res,next){
+router.get('/AvailableFlights',function(req,res,next){
   request(APIURL  ,
 
        function (error, response, body) {

@@ -9,7 +9,7 @@ router.get('/', function(req, res, next) {
 });
 
 router.get('/Available flights', function(req, res, next) {
-                res.send("Availablefights :<br/>Flight 1: 0170 - Chennai to Bangloore <br/>Flight 2: 2337 - Delhi to Vijayawada <br/>Flight 3: 9908 - Hyderabad to Mumbai <br/>Flight 4: 2089 - Vizag to Hyderabad");
+                res.console.log("Availablefights :<br/>Flight 1: 0170 - Chennai to Bangloore <br/>Flight 2: 2337 - Delhi to Vijayawada <br/>Flight 3: 9908 - Hyderabad to Mumbai <br/>Flight 4: 2089 - Vizag to Hyderabad");
 
 });
 
